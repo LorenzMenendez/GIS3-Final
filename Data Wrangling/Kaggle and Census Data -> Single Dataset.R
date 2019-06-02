@@ -35,3 +35,7 @@ tmap_mode("view")
 tm_shape(elctnData16) + 
         tm_borders("black", lwd = .5)
 
+
+# STEP 4: Exporting to GeoJSON ------------------------------------------
+st_write(elctnData16, "DATA/electnData16.geojson", driver = "GeoJSON")
+
