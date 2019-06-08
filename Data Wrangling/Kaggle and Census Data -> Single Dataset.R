@@ -28,6 +28,8 @@ elctnData16 = inner_join(countyQuickfacts16, countyBoundaries16, by = c("fips" =
         st_sf() %>%
         st_zm(drop = TRUE)
 
+remove(countyBoundaries16, countyQuickfacts16)
+
 
 # STEP 3: Sanity Checking by Plotting Data --------------------------------
 library(tmap)
