@@ -8,25 +8,25 @@ We assume that a percentage vote for one specific candidate is a dependent varia
 
 ## Major Steps
 ### Data Wrangling 
-[x] County Boundary Shapefile with Election Data and Census QuickFact socioeconomic data
-[ ] Standardizing data to % of population data (Very Important for an accurate PCA)
-[ ] Removing redundant variables that are super similar to each other.
+- [x] County Boundary Shapefile with Election Data and Census QuickFact socioeconomic data
+- [ ] Standardizing data to % of population data (Very Important for an accurate PCA)
+- [ ] Removing redundant variables that are super similar to each other.
 
 ### Finding Outlying Counties
-[x] Exporting Data to GeoDa to run a Local Moran's I analysis based on the percentage of the vote that went to Hillary Clinton in 2016. 
-[ ] Reimporting the data to R with a column determing which counties are outliers and which are significant clusters of voting patterns.
-[ ] Calculating the LISA in R instead for reproducibility (very challenging!)
+- [x] Exporting Data to GeoDa to run a Local Moran's I analysis based on the percentage of the vote that went to Hillary Clinton in 2016. 
+- [ ] Reimporting the data to R with a column determing which counties are outliers and which are significant clusters of voting patterns.
+- [ ] Calculating the LISA in R instead for reproducibility (very challenging!)
 
 ### Running PCA Analysis
-[x] Calculate correlation matrix to verify that a PCA would be statistically significant
-[ ] Run the PCA analysis on all variables except for the voting data, since its the dependent variable
-[ ] Interpret the components, determine which variables are in which components
+- [x] Calculate correlation matrix to verify that a PCA would be statistically significant
+- [ ] Run the PCA analysis on all variables except for the voting data, since its the dependent variable
+- [ ] Interpret the components, determine which variables are in which components
 
 ### Regression and Prediction
-[ ] Use the components from PCA to determine which outliers fit into which counties
+- [ ] Use the components from PCA to determine which outliers fit into which counties
 
 ### Optimization
-[ ] Create helper functions to automate calculations and make code more readable and scalable
+- [ ] Create helper functions to automate calculations and make code more readable and scalable
 
 ## Citations
 * Running Correlations and PCA in R (https://www.youtube.com/watch?v=Od8gfNOOS9o)
